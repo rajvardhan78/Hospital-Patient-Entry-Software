@@ -1,0 +1,2 @@
+1. You need to setup MySQL Workbench to run this software. You need to provide your URL, Username and Password of the particular database. Also you need to create database which matches the insert query in the home page code.
+2. You'll need JDBC driver installed in the system path variables and added in the project structure to connect the database with the program.
