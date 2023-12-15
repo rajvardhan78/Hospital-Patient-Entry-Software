@@ -137,7 +137,7 @@ class home extends JFrame
             try
             {
                 //Class.forName("com.mysql.jdbc.Driver");
-                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Hospital", "root", "@r18a1j10");
+                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Database_Name", "username", "password");
                 String insertQuery = "INSERT INTO patient (Name, Age, BloodGroup, History, Contact, Time) VALUES (?, ?, ?, ?, ?, ?)";
 
                 try (PreparedStatement preparedStatement = connection.prepareStatement(insertQuery))
