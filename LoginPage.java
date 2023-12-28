@@ -89,6 +89,11 @@ public class LoginPage extends JFrame
 
                     // Open the main application window or perform any other action
                 } 
+                else if (enteredUsername.equals(docUsername) && new String(enteredPassword).equals(docPassword)) 
+                {
+                    new dochome();
+                    dispose();
+                }
                 else 
                 {
                     JOptionPane.showMessageDialog(null, "Invalid username or password. Please try again.");
